@@ -1,0 +1,16 @@
+@import "./colors.scss";
+
+.mini-map-wrapper {
+    width: 100%;
+    height: 20.5em;
+    border: 1px solid #ccc;
+    padding: 0 !important;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    .map-container {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+}

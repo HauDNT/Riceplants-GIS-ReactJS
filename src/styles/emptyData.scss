@@ -1,0 +1,15 @@
+.empty-data-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    // img {
+    //     margin-top: 3em;
+    // }
+
+    .empty-data-title {
+        margin-top: 1em;
+    }
+}

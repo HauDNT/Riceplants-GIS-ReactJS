@@ -1,0 +1,50 @@
+.form {
+    .form-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        .avatar-wrapper {
+            display: flex;
+            width: 100%;
+            height: 0;
+            padding-bottom: 72%;
+            position: relative;
+            overflow: hidden;
+    
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+        }
+
+        .avatar-btn-wrapper {
+            text-align: center;
+
+            label {
+                width: 100%;
+
+                span {
+                    width: 100%;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+
+    .form-body {
+        margin-top: 1em;
+
+        button {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+    }
+}

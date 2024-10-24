@@ -1,0 +1,62 @@
+.heading-page {
+    font-weight: 800 !important;
+    padding: 15px 0 10px;
+}
+
+.wrapper {
+    padding: 5px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.default-link {
+    text-decoration: none;
+    color: #1976d2;
+}
+
+.mt-10px {
+    margin-top: 10px;
+}
+
+.mt-1em {
+    margin-top: 1em !important;
+}
+
+.mt-1-5em {
+    margin-top: 1.5em !important;
+}
+
+.mb-1em {
+    margin-bottom: 1em !important;
+}
+
+.mb-1-5-em {
+    margin-bottom: 1.5em !important;
+}
+
+.pt-0-5em {
+    padding-top: 0.5em;
+}
+
+.pt-1em {
+    padding-top: 1em !important;
+}
+
+.pt-1-5em {
+    padding-top: 1.5em;
+}
+
+.pb-0-5em {
+    padding-bottom: 0.5em;
+}
+
+.pb-1em {
+    padding-bottom: 1em;
+}
+
+.zoom {
+    transition: transform .3s ease !important;
+    
+    &:hover {
+        transform: scale(1.05) !important;
+    }
+}
