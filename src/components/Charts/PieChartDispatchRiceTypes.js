@@ -29,7 +29,7 @@ const PieChartDispatchRiceTypes = ({ plainData }) => {
                     },
                     title: {
                         display: true,
-                        text: 'Biểu đồ sản lượng các loại gạo nhập đã xuất trong kho theo thời gian đã chọn',
+                        text: 'Sản lượng các loại gạo đã xuất',
                     },
                 },
             }}

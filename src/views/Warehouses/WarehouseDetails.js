@@ -143,7 +143,7 @@ function WarehouseDetails() {
                                         <Row>
                                             <Col>
                                                 <TextField
-                                                    label="Tung độ"
+                                                    label="Vĩ độ"
                                                     variant="outlined"
                                                     fullWidth
                                                     margin="normal"
@@ -158,7 +158,7 @@ function WarehouseDetails() {
                                         <Row>
                                             <Col>
                                                 <TextField
-                                                    label="Hoành độ"
+                                                    label="Kinh độ"
                                                     variant="outlined"
                                                     fullWidth
                                                     margin="normal"

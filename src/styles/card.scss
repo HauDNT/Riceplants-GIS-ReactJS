@@ -1,0 +1,13 @@
+@import './colors.scss';
+
+.card-container {
+    height: 10em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: $background-color_card;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+
+    .card-header {
+        border-bottom: 1px solid #a5a5a5;
+    }
+}

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import ReactDOM from 'react-dom';
 import mapboxgl from 'mapbox-gl';
 import { toast } from 'react-toastify';
-import { MAPBOX_API_KEY, MAPBOX_API_STYLE } from '../../../config/config';
+import { MapboxAPIKey } from '../../../common/MapboxApiKey';
 import Marker from '../Marker';
 import MarkerPopupCard from '../MarkerPopupCard';
 import MapToolbar from './MapToolbar';
@@ -13,7 +13,7 @@ import StatisticsModal from '../Modals/StatisticsModal';
 import GeocoderMarker from './GeocoderMarkerComponent';
 import { FindCoordinates } from './FindCoordinates';
 
-mapboxgl.accessToken = MAPBOX_API_KEY;
+mapboxgl.accessToken = MapboxAPIKey;
 
 const MapComponent = ({ placesData = [], reloadData = () => { } }) => {
     const mapContainer = useRef(null);
@@ -131,7 +131,7 @@ const MapComponent = ({ placesData = [], reloadData = () => { } }) => {
 
         map.current = new mapboxgl.Map({
             container: mapContainer.current,
-            style: MAPBOX_API_STYLE,
+            style: 'mapbox://styles/thomasdang1812003/cm11wky8301du01pbdyaresom',
             center: [lng, lat],
             zoom: zoom,
         });

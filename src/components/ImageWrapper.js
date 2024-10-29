@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { SERVER_URL } from '../config/config';
 import axiosInstance from '../common/AxiosInstance';
 import {
     Button,
     Container,
-    Box,
 } from '@mui/material';
 import { Col } from 'react-bootstrap';
 import { toast } from 'react-toastify';
@@ -83,7 +82,9 @@ const ImageWrapper = ({ objectId, type, imgName, enableChange = true, afterChang
                             variant="outlined"
                             color="primary"
                             component="span"
-                        >Đổi ảnh</Button>
+                        >
+                            Đổi ảnh
+                        </Button>
                     </label>
                 </Col>
             }

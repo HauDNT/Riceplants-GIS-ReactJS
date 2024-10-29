@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import Marker from '../Marker';
-import { MAPBOX_API_KEY, MAPBOX_API_STYLE } from '../../../config/config';
+import { MapboxAPIKey } from '../../../common/MapboxApiKey';
 
-mapboxgl.accessToken = MAPBOX_API_KEY;
+mapboxgl.accessToken = MapboxAPIKey;
 
-function MiniMapComponent({ lat, lng, zoom, updateLatLngData}) {
+function MiniMapComponent({ lat = 9.97032002433383, lng = 105.11054875065781, zoom, updateLatLngData}) {
     const [mapLoaded, setMapLoaded] = useState(false);
     const [currentMarker, setCurrentMarker] = useState({
         Latitude: lat,
@@ -14,7 +14,7 @@ function MiniMapComponent({ lat, lng, zoom, updateLatLngData}) {
     const mapContainer = useRef(null);
     const map = useRef(null);
 
-    const updateMarker = (event) => {
+    const updateMarker = async (event) => {
         setCurrentMarker(prevData => ({
             Latitude: event.lngLat.lat,
             Longitude: event.lngLat.lng,
@@ -28,7 +28,7 @@ function MiniMapComponent({ lat, lng, zoom, updateLatLngData}) {
 
         map.current = new mapboxgl.Map({
             container: mapContainer.current,
-            style: MAPBOX_API_STYLE,
+            style: 'mapbox://styles/thomasdang1812003/cm11wky8301du01pbdyaresom',
             center: [lng, lat],
             zoom: zoom,
         });

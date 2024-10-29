@@ -17,7 +17,7 @@ function Dashboard() {
     const [states, setStates] = useState({
         receiveBills: 0,
         dispatchBills: 0,
-        warehouses: listWarehouses.length,
+        warehouses: 0,
         staffs: 0,
         isLoading: true,
     });
@@ -35,18 +35,18 @@ function Dashboard() {
                 axiosInstance.get('/receiving-slips/amount'),
                 axiosInstance.get('/dispatch-slips/amount'),
                 axiosInstance.get('/staffs/amount'),
-                axiosInstance.get('/warehouses/amount'),
+                // axiosInstance.get('/warehouses/amount'),
             ])
             .then(
                 ([
                     resReBillsAmount,
                     resDisBillsAmount,
                     resStaffsAmount,
-                    resWarehousesAmount,
+                    // resWarehousesAmount,
                 ]) => {
                     updateStatesData('receiveBills', resReBillsAmount.data.payload);
                     updateStatesData('dispatchBills', resDisBillsAmount.data.payload);
-                    updateStatesData('warehouses', resWarehousesAmount.data.payload);
+                    updateStatesData('warehouses', listWarehouses.length);
                     updateStatesData('staffs', resStaffsAmount.data.payload);
                 }
             )

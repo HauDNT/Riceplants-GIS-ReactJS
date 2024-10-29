@@ -45,7 +45,7 @@ const LineChartReceiveAndDispatchBills = ({ receiveBillsData, dispatchBillsData 
                     },
                     title: {
                         display: true,
-                        text: 'Biểu đồ sản lượng các loại gạo nhập đã xuất trong kho',
+                        text: 'Sản lượng gạo đã nhập - xuất',
                     },
                 },
             }}

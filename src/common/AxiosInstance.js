@@ -1,10 +1,10 @@
 import axios from "axios";
 import { getFromLocalStorage } from "../utils/LocalStorage";
-import { SERVER_URL } from '../config/config';
+import { ServerAddress } from "./UrlServerAddress";
 
 // Instance axios với cấu hình mặc định
 const axiosInstance = axios.create({
-    baseURL: SERVER_URL,
+    baseURL: ServerAddress,
     timeout: 10000,
     headers: {
         "Content-Type": "application/json",

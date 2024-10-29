@@ -33,7 +33,7 @@ const PieChartReceiveRiceTypes = ({ plainData }) => {
                     },
                     title: {
                         display: true,
-                        text: 'Biểu đồ sản lượng các loại gạo nhập đã nhập trong kho theo thời gian đã chọn',
+                        text: 'Sản lượng các loại gạo đã nhập',
                     },
                 },
             }}

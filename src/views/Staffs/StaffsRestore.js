@@ -13,7 +13,6 @@ function RestoreStaffs() {
     const fetchStaffsDeleted = async () => {
         try {
             const result = await axiosInstance.get(`/staffs/deleted`);
-
             if (result) {
                 result.data.forEach(staff => {
                     staff.Gender = staff.Gender ? 'Nam' : 'Nữ';
